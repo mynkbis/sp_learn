@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import ButtonBox from './Compnents/Button/button';
-import Box from './Model/box';
+import Box from './Compnents/Model/box';
 
 
 function App() {

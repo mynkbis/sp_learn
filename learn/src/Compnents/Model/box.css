@@ -12,7 +12,7 @@
     width: 20%;
     height: 100px;
     background-color: #fff;
-    margin: 10px auto;
+    margin: 30px auto;
     margin-left: auto;
     padding: 50px;
     border: 2px solid rgb(224, 222, 222);
@@ -26,7 +26,9 @@
     border: 1px solid #999;
     border-radius: 50%;
     position: fixed;
-    right: calc(25%-20px);
-    
+    right: 37.5%;
+    bottom: 95%;
+    width: 30px;
+
 }
 
