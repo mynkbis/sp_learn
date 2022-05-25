@@ -1,4 +1,4 @@
-.AppButton{
+ .appButton{
  
     border: none;
     filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.315));
@@ -10,7 +10,7 @@
     margin-top: 10px;
   }
   
-  .AppButton{
+  .appButton{
       filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.295));
   
-  }
+  } 

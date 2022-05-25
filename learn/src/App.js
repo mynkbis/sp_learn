@@ -1,17 +1,25 @@
-
+import { useState } from 'react';
 import './App.css';
-import Button from './Button/button';
+import ButtonBox from './Compnents/Button/button';
+import Box from './Model/box';
 
 
 function App() {
+  const [isOpen, setIsOpen]=useState(false)
+  const toggleBox=()=>{
+    setIsOpen(!isOpen)
+  };
+
   return (
     <div className="App">
+   <ButtonBox toggleBox={toggleBox} buttonName={"Hello Sir"}></ButtonBox>  {/* button component */}
+  {isOpen && 
+  <Box handleClose={toggleBox}
+  content={"Thank you !! for subscribing"}></Box>}  
+  {/* pop up box will be open when button is clicked */}
+   </div>
 
-<div onClick={()=>{ alert("You clicked submit")}}>{Button("Submit","150px","50px","Black","green")}</div>
-<div onClick={()=>{alert("You hit a Button")}}>{Button("Press-me","150px","50px","Black","green")}</div>
-<div onClick={()=>{alert("A got your notification")}}>{Button("Hire me","150px","50px","Black","green")}</div>
-    </div>
-  );
+);
 }
 
 export default App;
