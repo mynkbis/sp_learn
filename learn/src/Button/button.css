@@ -1,0 +1,16 @@
+.AppButton{
+ 
+    border: none;
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.315));
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    top: 50px;
+    margin-top: 10px;
+  }
+  
+  .AppButton{
+      filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.295));
+  
+  }
