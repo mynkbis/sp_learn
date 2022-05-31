@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import ButtonBox from './Compnents/Button/button';
 import Box from './Compnents/Model/box';
-import Search from './Compnents/Search box/Search';
+import Search from './Compnents/Search/Search';
 
 
 function App() {
@@ -23,7 +23,6 @@ function App() {
   content={"Thank you !! for subscribing"}></Box>}   */}
   {/* pop up box will be open when button is clicked */}
    </div>
-
 );
 }
 

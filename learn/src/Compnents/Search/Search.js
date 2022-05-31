@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import ContentSingle from '../ContentSingle/ContentSingle';
-
+import SearchBoxModel from "../Model/SearchBoxModel"
 
 
 function Search() {
@@ -25,14 +25,18 @@ function Search() {
 
   },[])
      return (
-    <div style={{display:"flex" , margin:"15px"}}>
-    <input placeholder='Search here...' onChange={(e)=>setSearchText(e.target.value)}></input>  
-    <button onClick={FetchSearch}>Search</button>
-    <div>
+    // <div style={{display:"flex" , margin:"15px"}}>
+    // <input placeholder='Search here...' onChange={(e)=>setSearchText(e.target.value)}></input>  
+    // <button onClick={FetchSearch}>Search</button>
+    // <div>
 
-    {content && content.map((e)=><ContentSingle key={e.id} id={e.id } description={e.description} title={e.title} image={e.image}/>)}
-      </div>
-    </div>
+    // {content && content.map((e)=><ContentSingle key={e.id} id={e.id } description={e.description} title={e.title} image={e.image}/>)}
+    //   </div>
+    // </div>
+
+    <>
+      <SearchBoxModel/>
+    </>
   )
   
 }
